@@ -1,0 +1,75 @@
+router.php\nrouter.php:: GetCategory\nrouter.php:: returnArray\nrouter.php
+router.php:: GetCategory
+router.php:: return Array
+router.php
+router.php:: GetCategory
+router.php:: return Array
+router.php
+router.php:: GetCategory
+router.php:: qiery result: 
+router.php:: qiery result: 
+router.php:: qiery result: 
+router.php:: return Array
+router.php
+router.php:: GetCategory
+router.php:: query result: 
+router.php:: query result: 
+router.php:: query result: 
+router.php:: return Array
+router.php
+router.php:: GetCategory
+router.php:: query result: Linux
+router.php:: query result: Android
+router.php:: query result: Program Language
+router.php:: return Array
+router.php
+router.php:: GetCategory
+router.php:: query result: Array
+router.php:: query result: Array
+router.php:: query result: Array
+router.php:: return Array
+router.php
+router.php:: GetCategory
+router.php:: query result: Array
+router.php:: return Array
+
+
+
+router.php
+router.php:: GetCategory
+router.php:: query result: Array
+router.php:: return Array
+router.php
+router.php:: GetCategory
+router.php:: query result: Array
+router.php:: return Array
+router.php
+router.php:: GetCategory
+router.php
+router.php:: GetCategory
+router.php
+router.php:: GetCategory
+router.php
+router.php:: GetCategory
+router.php
+router.php:: GetCategory
+router.php
+router.php:: GetCategory
+router.php
+router.php:: GetCategory
+router.php
+router.php:: GetCategory
+router.php
+router.php:: GetCategory
+router.php
+router.php:: GetCategory
+router.php
+router.php:: GetCategory
+router.php
+router.php:: GetCategory
+router.php
+router.php:: GetCategory
+router.php
+router.php:: GetCategory
+router.php
+router.php:: GetCategory

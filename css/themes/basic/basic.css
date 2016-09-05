@@ -1,0 +1,5 @@
+@import url("../../common/color.css");
+
+:root {
+    --primary_color:var(--gray);
+}

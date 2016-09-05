@@ -1,0 +1,98 @@
+@import url(themes/current_themes.css);
+body{
+    position:absolute;
+    overflow-x: hidden;
+    margin: 0;
+    top: 0;
+    background: linear-gradient(white, var(--dimgray));
+    background-image: url("../img/bg2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:100% 100%;
+}
+
+
+table {
+    border:0;
+    padding: 0;
+    margin-top: 20px;
+    margin-left: 0;
+    font-size:14px;
+}
+
+table tr td{
+    border: 0;
+    top:0;
+    margin-left: 0;
+    padding-left: 5px;
+    padding-top: 5px;
+    font-size:14px;
+}
+
+a {
+    color: #333333;
+}
+a:link,a:visited{
+    text-decoration:none;
+}
+a:hover{
+    text-decoration:none;
+}
+
+
+#blog_title_panel {
+    background-color: transparent;
+    text-align: center;
+    font-family: "Microsoft YaHei UI","宋体",SansSerif;
+    font-size: 2em;
+    font-weight: bolder;
+    border-width: 1px;
+    border-color: var(--primary_color);
+    border-style:solid;
+    margin-top: 10px;
+}
+
+
+#main_panel {
+    background-color: transparent;
+    margin-top: 10px;
+
+}
+
+
+
+#left_panel {
+    float: left;
+    display: inline;
+}
+
+
+#right_panel {
+    float: left;
+    display: inline;
+}
+
+
+
+#navigation_panel{
+    border-width: 1px;
+    border-color: var(--primary_color);
+    border-style:solid;
+    margin-bottom: 10px;
+}
+
+
+#blog_index{
+    border-width: 1px;
+    border-color: var(--primary_color);
+    border-style:solid;
+    margin-top: 10px;
+}
+
+
+#blog_body{
+    border-width: 1px;
+    border-color: var(--primary_color);
+    border-style:solid;
+}
