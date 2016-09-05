@@ -10,6 +10,8 @@ const LEFT_PANEL_SCALOR = 0.1;
 const navigation_height =300;
 const content_index_height = 300;
 
+var categories = [];
+
 function findDimensions() {
     var w = window.innerWidth,
         h = window.innerHeight;
@@ -196,6 +198,30 @@ function getScrollbarWidth() {
     return scrollbarWidth;
 }
 
+function category(obj) {
+    var category = "";
+    console.log("category innerText: "+obj.innerText);
+    console.log("category title: "+obj.title);
+    if(categories.length > 0 && obj.title != '') {
+        for(var i = 0; i < categories.length; i++){
+            var category = categories[i];
+            console.log("categories: "+category);
+            if(category == obj.title){
+                break;
+            }
+        }
+    }
+
+    console.log("category: "+category+" is clicked");
+    var titleElement = document.getElementById("blog_title_panel");
+    if(titleElement){
+        titleElement.innerHTML = category;
+        console.log("titleElement innerText: "+titleElement.innerText);
+        console.log("titleElement category: "+ category);
+    }
+
+}
+
 function ajax(url, method, fnSucc, fnFaild){
     //1.创建对象
     var oAjax = null;
@@ -257,14 +283,14 @@ function initCategory(){
     ajax("http://localhost/GetCategory", "GET",
         function(resultText){
             console.log("onResult: "+resultText);
-            var categories = eval(resultText);
-            categories.sort();
+            categories = eval(resultText);
             var childContent = "";
-            for (var i = categories.length - 1; i >= 0; i--) {
+            for (var i = 0; i <  categories.length; i++) {
                 childContent =  childContent + "<tr>";
                 childContent = childContent + '<td><img src="img/navigation_16.png"></td>';
                 childContent = childContent + '<td><a  href="javascript:void(0)"' +
-                                'onclick="category(this);return false;">' +
+                                ' title="'+categories[i] + '" ' +
+                                ' onclick="category(this);return false;">' +
                                 categories[i]+
                                 '</a></td>';
                 childContent =  childContent + "</tr>";

@@ -4,6 +4,7 @@
 "use strict";
 function category(obj) {
     var category = "";
+    console.log("category: "+obj.innerText);
     if( obj.innerText == "Linux"){
         category = "Linux";
         console.log("Linux category clicked")
