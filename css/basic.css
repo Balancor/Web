@@ -12,7 +12,6 @@ body{
     background-size:100% 100%;
 }
 
-
 table {
     border:0;
     padding: 0;
@@ -95,4 +94,23 @@ a:hover{
     border-width: 1px;
     border-color: var(--primary_color);
     border-style:solid;
+}
+
+.blog_overview {
+    margin: 5px;
+    border-width: 1px;
+    border-color: var(--primary_color);
+    border-style: solid;
+}
+
+.blog_title {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-family: "Microsoft YaHei UI","宋体",SansSerif;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.blog_content_overview p{
+    background: linear-gradient(to right, white, rgba(200,200,200,0.6));
 }

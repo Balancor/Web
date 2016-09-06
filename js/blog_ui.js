@@ -255,27 +255,6 @@ function ajax(url, method, fnSucc, fnFaild){
 }
 
 function initCategory(){
-
-   /*
-                   <table border="1">
-                    <tr>
-                        <td><img src="img/navigation_16.png"></td>
-                        <td><a  href="javascript:void(0)" value="linux"
-                                onclick="category(this);return false;">Linux</a></td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/navigation_16.png"></td>
-                        <td><a  href="javascript:void(0)" value="android"
-                                onclick="category(this);return false;">Android</a></td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/navigation_16.png"></td>
-                        <td><a  href="javascript:void(0)" value="programe_language"
-                                onclick="category(this);return false;">Programe Language</a></td>
-                    </tr>
-                </table>
-
-   */ 
     var navElement = document.getElementById("navigation_panel");
     var tableElement = document.createElement("table");
     tableElement.style.border = "1";

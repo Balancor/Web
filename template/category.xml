@@ -1,0 +1,7 @@
+<table border="1">
+    <tr>
+        <td><img src="img/navigation_16.png"></td>
+        <td><a  href="javascript:void(0)" value="linux"
+            onclick="category(this);return false;">Linux</a></td>
+    </tr>
+</table>
