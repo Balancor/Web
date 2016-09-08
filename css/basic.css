@@ -112,24 +112,25 @@ a:hover{
 }
 
 .blog_content_overview p{
-    background: linear-gradient(to right, white, rgba(200,200,200,0.6));
+    text-indent: 2em;
+    color:#606060;
 }
 
 .blog_extern_info {
     text-align: right;
+    margin-top: 0;
     margin-left: 5px;
     margin-right: 5px;
+    margin-bottom: 5px;
     color: var(--primary_color);
 }
 
 .view_counter {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-right: 20px;
     color: var(--primary_color);
 }
 
 .post_date {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-right: 20px;
     color: var(--primary_color);
 }

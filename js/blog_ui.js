@@ -259,7 +259,7 @@ function initCategory(){
     var tableElement = document.createElement("table");
     tableElement.style.border = "1";
     navElement.appendChild(tableElement);
-    ajax("http://localhost/GetCategory", "GET",
+    ajax("/GetCategory", "GET",
         function(resultText){
             console.log("onResult: "+resultText);
             categories = eval(resultText);
@@ -290,16 +290,13 @@ function initViewStyle(){
     initBodyStyle();
     initBlogTitleStyle();
     initMainPanel();
-    initCategory();
-
 }
 
 
 
 
 initViewStyle();
-
-
+initCategory();
 
 
 window.onresize = function () {

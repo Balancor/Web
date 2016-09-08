@@ -1,29 +1,35 @@
 <?php
 
+include_once "server/database_helper.php";
+include_once "server/Category.php";
+
 function main(){
-    $mysql_server_name='mysql:host=localhost;dbname=blog;port=3306';
-    $mysql_username="blog";
-    $mysql_password="guoguo";
-    $pdo = new PDO($mysql_server_name,$mysql_username, $mysql_password);
-	$pdo->exec('set names utf8');
+
+	$databaseHelper =  new DatabaseHelper("blog", "guoguo", "blog");
 
 	$pathinfo = explode("/", $_SERVER['PATH_INFO']);
 
 	$location = $pathinfo[1];
 	if($location == ''){
-		header("Location: http://localhost/index.html");
+		header("Location: index.html");
 	} elseif ($location == 'GetCategory') {
-		$qresult = $pdo->query("select name from category");
-		if(!qresult){
-
+		$qresult = $databaseHelper->query("select * from category");
+		if(!$qresult){
+			error_log("qresult is null " , 3, "log.txt");
 		} else {
 			while($row = $qresult->fetch()){
-				$results[] = $row[0];
+
+				error_log("row: "+json_encode($row), 3, 'log.txt');
+
+//				$c = new Category();
+//				$c->id = $row->_id;
+//				$c->name = $row->name;
+				$results[] = null;
 			}
 		}
 
-		$ret = json_encode($results);
-
+		$ret = json_encode(array("state" => "success",  'categories' => $results));
+		error_log("query Result  " + $ret, 3, "log.txt");
 		header('Content-Type:application/octet-stream');
 		header('Content-Length: ' . strlen($ret));
 		echo $ret;
